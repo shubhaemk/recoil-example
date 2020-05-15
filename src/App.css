@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+.app{
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFF;
+    display: flex;
+    flex-direction: row;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.action{
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #AAA;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addItemContainer{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #AAA;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filterItemContainer{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.addItemText{
+    display: block;
+    margin-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addItemInput{
+    height: 30px;
+    margin-right: 20px;
 }
+
+.addInputButton{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.displayListContainer{
+    border-left: 1px solid #AAA;
+    height: 80%;
+    width: 20vw;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.displayListContainerEmpty{
+    border-left: 1px solid #AAA;
+    height: 100%;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listItem{
+    display: block;
+    width: 100%;
+}
+
+.resetContainer{
+    border-left: 1px solid #AAA;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayListContainerMain{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
